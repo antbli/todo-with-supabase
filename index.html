@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>todo</title>
+  </head>
+  <body>
+    <div><button>Login</button></div>
+    <div>
+      <form><input type="text" id="add" /><button>Add</button></form>
+    </div>
+    <div><ul id="list"></ul></div>
+  </body>
+  <script>
+    const items = [];
+    const ul = document.getElementById("list");
+    items.forEach((item) => {
+      const li = document.createElement("li");
+      li.textContent = item;
+      ul.appendChild(li);
+    });
+  </script>
+</html>
